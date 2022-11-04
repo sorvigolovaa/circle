@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 100px;
+  background-color: blue;
+  position: relative;
+  animation-name: circle;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+  0% {
+    left: 0;
+    top: 0;
+  }
+
+  10% {
+    top: 0;
+    left: 300px;
+    background-color: dimgray;
+  }
+
+  20% {
+    left: 500px;
+    top: 100px;
+    background-color: rgb(78, 5, 5);
+  }
+  30% {
+    left: 600px;
+    top: 100px;
+    background-color: rgb(239, 175, 13);
+  }
+  40% {
+    left: 800px;
+    top: 0;
+    background-color: rgb(11, 155, 238);
+  }
+  50% {
+    left: 1200px;
+    top: 400px;
+    background-color: rgb(23, 245, 15);
+  }
+  60% {
+    left: 400px;
+    top: 400px;
+    background-color: rgb(236, 15, 177);
+  }
+  70% {
+    top: 100px;
+    left: 400px;
+    background-color: rgb(136, 237, 13);
+  }
+  80% {
+    left: 30px;
+    top: 0;
+    background-color: rgb(56, 12, 216);
+  }
+}
